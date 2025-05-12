@@ -31,8 +31,6 @@ Yêu cầu bao gồm việc tìm repository để thay thế ứng dụng "facel
 - Sử dụng C++ và Qt, áp dụng MVVM cho UI.
 - Dễ mở rộng, bảo trì, hiệu suất cao (không memory leak), có cơ chế recovery khi ứng dụng bị stuck.
 - Ứng dụng hiện tại gặp vấn đề khi state machine không quay lại trạng thái ban đầu, dẫn đến phải reboot box.
-- Demo thêm một màn hình mới với chức năng cụ thể và trình bày kiến trúc.
-- Thời gian review: Chiều thứ Tư, 15h, ngày 14/05/2025 (dựa trên thời gian hiện tại: 14:31, 12/05/2025).
 
 ### Phương pháp tìm kiếm và phân tích
 Sử dụng công cụ tìm kiếm với từ khóa: "Qt C++ MVVM", "high performance", "no memory leaks", "recovery mechanism", "state machine". Các repository được đánh giá dựa trên mô tả, tính năng, ví dụ, và khả năng đáp ứng tiêu chí.
