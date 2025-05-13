@@ -23,22 +23,21 @@ For clarity, this analysis focuses on the `mvvmquick` project (https://github.co
 ### 2.1. Directory Structure of `mvvmquick`
 
 ```
-mvvmquick/
-├── SampleCore/              # Core Project (Model and ViewModel)
-│   ├── coreapp.cpp          # Main application class
-│   ├── coreapp.h
-│   ├── sampleviewmodel.cpp  # Sample ViewModel
-│   ├── sampleviewmodel.h
-│   └── SampleCore.pro       # qmake configuration file
-├── SampleQuick/             # GUI Project (View)
-│   ├── main.cpp             # Application entry point
-│   ├── qml.qrc              # QML resources
-│   ├── SampleQuick.pro      # qmake configuration file
-│   └── qml/
-│       ├── Main.qml         # Main interface
-│       ├── SampleView.qml   # Primary View, linked to SampleViewModel
-│       └── [...]            # Other QML files
-└── mvvmquick.pro            # Overall qmake file
+QtMvvm/
+├── src/                     # Thư viện chính của QtMvvm
+│   ├── core/                # Chứa logic cốt lõi (CoreApp, ServiceRegistry)
+│   ├── widgets/             # Hỗ trợ Qt Widgets
+│   ├── quick/               # Hỗ trợ Qt Quick
+│   └── datasync/            # Tích hợp QtDataSync (đồng bộ dữ liệu)
+├── examples/                # Các dự án mẫu
+│   ├── mvvmquick/           # Dự án mẫu dùng Qt Quick
+│   │   ├── SampleCore/      # Dự án lõi (Model, ViewModel)
+│   │   └── SampleQuick/     # Dự án giao diện (View)
+│   ├── mvvmwidgets/         # Dự án mẫu dùng Qt Widgets
+│   │   ├── SampleCore/      # Dự án lõi (Model, ViewModel)
+│   │   └── SampleWidgets/   # Dự án giao diện (View)
+│   └── datasyncquick/       # Dự án mẫu tích hợp QtDataSync
+└── tests/                   # Các bài kiểm tra
 ```
 
 - **SampleCore**: The **core project**, containing application logic (Model and ViewModel). This part is independent of the interface and reusable for other GUI projects (Widgets or Quick).
